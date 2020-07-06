@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/TestState.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Enemies/DarkEnergy.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Artfact/TopLeftPiece.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Main/Game.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/Level1BState.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/PlayerSave.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/GameStateManager.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Handlers/Keys.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Player.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Spirit.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Main/GamePanel.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Portal.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/EnemyProjectile.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Enemies/VirutCon.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/MapObject.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Animation.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/Level1CState.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Title.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/TileMap/Background.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/DB.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/FireBall.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Artfact/TopRightPiece.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/EnergyParticle.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Enemies/VirutBay.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/AcidState.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Teleport.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/TileMap/TileMap.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Sever/KetNoiMySQL.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/Resources/HUD/hub.png</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/PauseState.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/Level1.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Artfact/BottomRightPiece.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/GameState.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/amThanh/amThanh.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/LuuDuLieuLenDatabase.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Enemies/Tengu.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Artfact/BottomLeftPiece.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/GuideState.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/HUD.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Sever/MyLIB.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Sever/DAO.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Enemy.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/Level1AState.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/MenuState.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/Level2.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Entity/Explosion.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/GameState/info.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/TileMap/Tile.java</file>
+            <file>file:/C:/Users/huygi/Desktop/DoAnJava/src/Handlers/Content.java</file>
+        </group>
+    </open-files>
+</project-private>
