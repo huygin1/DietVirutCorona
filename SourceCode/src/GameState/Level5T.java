@@ -118,7 +118,7 @@ public class Level5T extends GameState {
 		
 		// portal
 		portal = new Portal(tileMap);
-		portal.setPosition(500, 500 );
+		portal.setPosition(600, 600 );
 		
 		// artifact
 		

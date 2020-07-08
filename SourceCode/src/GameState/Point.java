@@ -20,7 +20,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Point extends GameState {
-      private amThanh at = new amThanh();
+
+    private amThanh at = new amThanh();
     String fontFileName = "/Fonts/HuyFont.otf";
 
     InputStream fonthuy = this.getClass().getResourceAsStream(fontFileName);
@@ -29,23 +30,23 @@ public class Point extends GameState {
     private float hue;
     private Color color;
     private String[] Name = new String[200];
-  
+
     private int[] LevelDB = new int[200];
 
     private int[] StateDB = new int[200];
     private String[] NameSX = new String[200];
     private int[] PointDB = new int[200];
- private int[] IDDB = new int[200];
+    private int[] IDDB = new int[200];
     private String Namec;
 
     private int lv;
     private int state;
     private int point;
-  
+
     private int[] ID = new int[200];
     private double angle;
     private BufferedImage image;
-     private BufferedImage imageh;
+    private BufferedImage imageh;
     GamePanel gp = new GamePanel();
     MenuState m;
     private int i;
@@ -64,7 +65,7 @@ public class Point extends GameState {
             while (rs.next()) {
 
                 Name[i] = new String(rs.getString(2));
-              
+
                 ID[i] = new Integer(rs.getInt(1));
                 i++;
 
@@ -80,27 +81,26 @@ public class Point extends GameState {
         }
     }
     int po;
+
     private void D2() {
         Connection cn = KetNoiMySQL.getConnect();
- String s;
+        String s;
         try {
-     
-                 s = "select * from HighScore ORDER BY HighPoint DESC;";
-           
-           
+
+            s = "select * from HighScore ORDER BY HighPoint DESC;";
+
             Statement sta = cn.createStatement();
 
             ResultSet rs = sta.executeQuery(s);
             i = 0;
             while (rs.next()) {
 
-               
                 PointDB[i] = new Integer(rs.getInt(3));
-                IDDB[i]= new Integer(rs.getInt(2));
+                IDDB[i] = new Integer(rs.getInt(2));
                 i++;
 
             }
-          po = i;
+            po = i;
 
             //5. dong resources
             sta.close();
@@ -113,7 +113,8 @@ public class Point extends GameState {
 
     public Point(GameStateManager gsm) {
         super(gsm);
-
+        D1();
+        D2();
         try {
             ttfBase = Font.createFont(Font.TRUETYPE_FONT, fonthuy);
 
@@ -122,7 +123,7 @@ public class Point extends GameState {
                 image = ImageIO.read(
                         getClass().getResourceAsStream("/State/pointmini.jpg")
                 );
-                 imageh = ImageIO.read(
+                imageh = ImageIO.read(
                         getClass().getResourceAsStream("/State/hub.png")
                 );
             } else {
@@ -130,7 +131,7 @@ public class Point extends GameState {
                 image = ImageIO.read(
                         getClass().getResourceAsStream("/State/point.jpg")
                 );
-                 imageh = ImageIO.read(
+                imageh = ImageIO.read(
                         getClass().getResourceAsStream("/State/hub2.png")
                 );
             }
@@ -138,64 +139,59 @@ public class Point extends GameState {
         } catch (Exception e) {
         }
     }
+    int co;
 
     public void init() {
+
     }
 
     public void update() {
         handleInput();
 
     }
- 
-    public void draw(Graphics2D g) {
-        D1();
-        D2();
 
-        for(int a = 0 ; a< 10; a++){
-            for(int u = 0; u < o; u ++){
-                 if( IDDB[a] == ID[u]){
-                     NameSX[a] = Name[u];
-                 }
+    public void draw(Graphics2D g) {
+        for (int a = 0; a < 10; a++) {
+            for (int u = 0; u < o; u++) {
+                if (IDDB[a] == ID[u]) {
+                    NameSX[a] = Name[u];
+                }
             }
-           
+
         }
-   System.out.println(lv);
-                   int co ;
-                    if(po < 10){
-                co = po;
-            }else{
-                co = 10;
-            }
+
+        if (po < 10) {
+            co = po;
+        } else {
+            co = 10;
+        }
         if (gp.checksc == true) {
-             g.drawImage(image, 0, 0, null);
+            g.drawImage(image, 0, 0, null);
             g.setColor(Color.BLACK);
             g.setFont(HuyFont);
-          
-           
-                    
-            for(int k = 0; k< co;k++){
-                 g.drawString(PointDB[k]+"", 986, 220+(k*42));
-                 g.drawString(NameSX[k], 377,  220+(k*42));
+
+            for (int k = 0; k < co; k++) {
+                g.drawString(PointDB[k] + "", 986, 220 + (k * 42));
+                g.drawString(NameSX[k], 377, 220 + (k * 42));
             }
         } else {
             g.drawImage(image, 0, 0, null);
-            
+
             g.setColor(Color.BLACK);
             g.setFont(HuyFont);
-            for(int k = 0; k< co;k++){
-                 g.drawString(PointDB[k]+"", 1481, 322+(k*64));
-                 g.drawString(NameSX[k], 566,  322+(k*64));
+            for (int k = 0; k < co; k++) {
+                g.drawString(PointDB[k] + "", 1481, 322 + (k * 64));
+                g.drawString(NameSX[k], 566, 322 + (k * 64));
             }
-           
-         
+
         }
-         g.drawImage(imageh,(int) GamePanel.WIDTH / 2 - imageh.getWidth() / 2, (int) (GamePanel.HEIGHT / 2 + GamePanel.HEIGHT / 3 + GamePanel.HEIGHT / 20),null);
+        g.drawImage(imageh, (int) GamePanel.WIDTH / 2 - imageh.getWidth() / 2, (int) (GamePanel.HEIGHT / 2 + GamePanel.HEIGHT / 3 + GamePanel.HEIGHT / 20), null);
     }
 
     public void handleInput() {
-        
+
         if (Keys.isPressed(Keys.U)) {
-               at.playMenuSelect();
+            at.playMenuSelect();
             gsm.setState(GameStateManager.MENUSTATE);
         }
     }

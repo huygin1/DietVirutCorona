@@ -20,13 +20,13 @@ public class Portal extends MapObject {
 		
 		super(tm);
 		
-		width = 387;
-		height = 221;
+		width = 536;
+		height = 453;
 		
 		try {
 			
 			BufferedImage spritesheet = ImageIO.read(
-				getClass().getResourceAsStream("/Sprites/Other/wu.png")
+				getClass().getResourceAsStream("/Sprites/Other/wuhan.png")
 			);
 			
 			closedSprites = new BufferedImage[1];
@@ -58,13 +58,13 @@ public class Portal extends MapObject {
 	public void setOpening() {
 		opening = true;
 		animation.setFrames(openingSprites);
-		animation.setDelay(6);
+		animation.setDelay(200);
 	}
 	
 	public void setOpened() {
 		if(opened) return;
 		animation.setFrames(openedSprites);
-		animation.setDelay(6);
+		animation.setDelay(200);
 		opened = true;
 	}
 	
@@ -75,7 +75,7 @@ public class Portal extends MapObject {
 		if(opening && animation.hasPlayedOnce()) {
 			opened = true;
 			animation.setFrames(openedSprites);
-			animation.setDelay(6);
+			animation.setDelay(100);
 		}
 	}
 	

@@ -110,9 +110,9 @@ public class Spirit extends Enemy {
 				enemies.add(shield[1]);
 			}
 			double pos = ticks / 32;
-			shield[0].setPosition(x + 30 * Math.sin(pos), y + 30 * Math.cos(pos));
+			shield[0].setPosition(x + 120 * Math.sin(pos), y + 120 * Math.cos(pos));
 			pos += 3.1415;
-			shield[1].setPosition(x + 30 * Math.sin(pos), y + 30 * Math.cos(pos));
+			shield[1].setPosition(x + 120 * Math.sin(pos), y + 120 * Math.cos(pos));
 		}
 		
 		if(!finalAttack && health <= maxHealth / 4) {

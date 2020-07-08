@@ -35,7 +35,7 @@ public class DarkEnergy extends Enemy {
 		cheight = 90;
 		
 		damage = 1;
-		moveSpeed = 25;
+		moveSpeed = 45;
 		
 		startSprites = Content.DarkEnergy[0];
 		sprites = Content.DarkEnergy[0];
@@ -68,7 +68,7 @@ public class DarkEnergy extends Enemy {
 			y += dy;
 		}
 		else if(type == GRAVITY) {
-			dy += 0.2;
+			dy += 3.2;
 			x += dx;
 			y += dy;
 		}

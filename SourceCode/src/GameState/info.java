@@ -148,7 +148,9 @@ public class info extends GameState {
 
     public info(GameStateManager gsm) {
         super(gsm);
-
+        D1();
+        D2();
+        D3();
         try {
             ttfBase = Font.createFont(Font.TRUETYPE_FONT, fonthuy);
 
@@ -160,7 +162,7 @@ public class info extends GameState {
             } else {
                 HuyFont = ttfBase.deriveFont(Font.PLAIN, 48);
                 image = ImageIO.read(
-                        getClass().getResourceAsStream("/State/InFO.jpg")
+                        getClass().getResourceAsStream("/State/InFo.jpg")
                 );
             }
 
@@ -169,6 +171,8 @@ public class info extends GameState {
     }
 
     public void init() {
+         
+        
     }
 
     public void update() {
@@ -188,10 +192,10 @@ public class info extends GameState {
     }
     private int HPoint;
     public void draw(Graphics2D g) {
-        D1();
-        D2();
-        D3();
-        for (int j = 0; j < o; j++) {
+       
+        
+  
+                  for (int j = 0; j < o; j++) {
             if (ID[j] == PlayerSave.IDU ) {
                 Emailc = Email[j];
                 Namec = Name[j];
@@ -213,9 +217,6 @@ public class info extends GameState {
             
 
         }
-        
-  
-                  
         if (gp.checksc == true) {
             g.drawImage(image, 0, 0, null);
             g.setColor(Color.BLACK);
